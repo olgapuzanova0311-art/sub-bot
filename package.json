@@ -1,0 +1,14 @@
+{
+  "name": "sub-bot",
+  "version": "1.0.0",
+  "description": "Telegram-бот: уведомления о подписках и отписках в канале/группе",
+  "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "license": "UNLICENSED"
+}

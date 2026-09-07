@@ -162,7 +162,10 @@ async function handleUpdate(update) {
 }
 
 async function registerWebhook() {
-  const publicHost = process.env.RAILWAY_PUBLIC_DOMAIN || process.env.WEBHOOK_HOST;
+  const publicHost =
+    process.env.RAILWAY_PUBLIC_DOMAIN ||
+    process.env.RENDER_EXTERNAL_HOSTNAME ||
+    process.env.WEBHOOK_HOST;
   if (!publicHost) {
     console.warn(
       'Не задан RAILWAY_PUBLIC_DOMAIN / WEBHOOK_HOST — webhook не зарегистрирован автоматически. ' +
